@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Css/estilo.css">
+    <link rel="stylesheet" href="./Css/estiloventatickets.css">
+
+    <title>Venta de Tickets</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="Imagenes/codoacodo.png" alt="CodoaCodoLogo" width="100"><p2>Conf Bs As</p2>
+            </a>
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+   
+            <div class="collape navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="index.html">La Conferencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" target="_blank">Los Oradores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">El Lugar y La Fecha</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Convierte en Orador</a></li>  
+                    <li class="nav-item"><a class="nav-link text-success" href="tickets.html">Comprar Tickets</a></li>
+                </ul>       
+            </div>
+        </div>    
+    </nav>
+
+    <div id="infovalores">
+        <div class="container-fluid">
+   
+            <div class="row">
+                <div class="col-md-4 box text-align text-center">
+                    <h3 class="mt-4">Estudiantes</h3>
+                        <p class="mt-4">Tienen un descuento</p>
+                            <h3 class="mt-4">80%</h3>
+                                <p class="mt-4">* Presentar documentacion</p>
+                </div>
+                <div class="col-md-4 box2 text-center">
+                    <h3 class="mt-4">Trainee</h3>
+                        <p class="mt-4">Tienen un descuento</p>
+                            <h3 class="mt-4">50%</h3>
+                                <p class="mt-4">* Presentar documentacion</p>
+                </div>
+                <div class="col-md-4 box3 text-center">
+                        <h3 class="mt-4">Junior</h3>
+                            <p class="mt-4">Tienen un descuento</p>
+                                <h3 class="mt-4">15%</h3>
+                                    <p class="mt-4">* Presentar documentacion</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container mt-4">
+            <div class="col text-center">
+                <p>VENTA</p>
+                    <h1>VALOR DE TICKET $200</h1>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-6"> <input type="text" class="form-control" id="nombre" placeholder="Nombre"></div>
+                    <div class="col-6"> <input type="text" class="form-control" id="apellido" placeholder="Apellido"></div>
+            </div>
+
+            <div class="row">
+                <div class="col mt-3">
+                    <input type="email" class="form-control" id="correo" placeholder="Correo">
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="cantidad" class="form-label">Cantidad</div>
+                        <input type="number" id="cantidad" value="0" min="0" class="form-control">
+                </div>
+                <div class="col-6">
+                    <div class="categoria" class="form-label">Categoria</div>
+                        <select name="categoria" id="categoria" class="form-control">
+                            <option value="categoria">Selecciona la categoria</option>
+                                <option value="estudiante">Estudiantes</option>
+                                    <option value="trainee">Trainee</option>
+                                        <option value="junior">Junior</option>
+                        </select>
+                
+                </div>
+            </div>
+        </div>
+        
+
+            <div class="row">
+                <div class="col mt-3">
+                    <div id="resultado">Total a Pagar: $</div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="d-grid gap-2 col-6 mx-auto"> <button class="btn btn-success btn4" id="boton-borrar">Borrar</button>
+                    </div>
+                <div class="d-grid gap-2 col-6 mx-auto"> <button class="btn btn-success btn4"id="boton-resumen">Resumen</button>
+                    </div>
+            </div>
+        </div> 
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+              <div class="col">Preguntas Frecuentes</div>
+                <div class="col" href="#formulario">Contáctanos</div>
+                    <div class="col">Prensa</div>
+                        <div class="col">Conferencias</div>
+                            <div class="col">Términos y Condiciones</div>
+                                <div class="col">Privacidad</div>
+                                    <div class="col">Estudiantes</div>
+            </div>
+        </div>
+    </footer>
+
+    
+            <script src="ventatickets.js"></script>
+
+    </body>
+</html>

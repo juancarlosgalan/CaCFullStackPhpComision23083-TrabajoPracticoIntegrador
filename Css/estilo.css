@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0Px;
+}
+
 nav.navbar{
     background-color: #3c4146 !important;
     padding: 0px 80px;
@@ -23,7 +28,7 @@ nav.navbar{
               color 0.3s ease-in;
 }
 .btn2{
-    background-color: green !important;
+    background-color: rgba(33, 158, 33, 0.89) !important;
     display: inline-block;
     width: 150px;
     height: 40px;
@@ -103,11 +108,11 @@ p2{
 }
 
 .btn3{
-    background-color: rgb(164, 240, 22);
+    background-color: rgba(33, 158, 33, 0.89) !important;
     width: 600px;
     padding: 8px;
     color: #fff;
-    border: 2px solid rgb(164, 240, 22);
+    border: 2px solid rgba(33, 158, 33, 0.89) !important; 
     text-align: center;
     outline: none;
     text-decoration: none;

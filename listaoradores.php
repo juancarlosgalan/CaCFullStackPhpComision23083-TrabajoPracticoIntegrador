@@ -20,6 +20,8 @@ include("conexion.php");
     <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./Css/estilo.css">
+    <link rel="stylesheet" href="./Css/estilotabla.css">
+
 
     <title>lista oradores</title>
 </head>
@@ -57,7 +59,7 @@ include("conexion.php");
             </div>
 
          
-
+<div class="container">
         <table class="table table-bordered table-light">
           <thead>
             <tr>
@@ -91,6 +93,7 @@ include("conexion.php");
               
             </thead>
           </table>
+</div>
 
 
 

@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0Px;
+}
+#formulario{
+    margin: auto;
+    padding: 20px;
+}
+.btn{
+    background-color: rgba(33, 158, 33, 0.89);
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    padding: auto;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,color 0.2s ease-out;
+    border-radius: 10px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
